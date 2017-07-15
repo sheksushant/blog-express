@@ -1,0 +1,21 @@
+// Navigation
+nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+  .container-fluid
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        |                     Menu
+        i.fa.fa-bars
+      a.navbar-brand(href='index.html') Blog_Express
+    // Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='/') Home
+        li
+          a(href='/articles') Articles
+        li
+          a(href='/categories') Categories
+    // /.navbar-collapse
+  // /.container
