@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .spacer
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        a(class='btn btn-tiny btn-primary' href='/manage/articles/add') Create Articles
+        h1= title
+          small
+            a(href='/manage/categories') Manage Categories
+        table(class='table table-striped')
+          tr
+            th Article Title
+            th Category
+            th Date Published
+            th Author
+            th
+          tr
+            td TITLE
+            td CATEGORY
+            td TIME
+            td AUTHOR
+            td
+              a(class="btn btn-tiny btn-default" href="/manage/articles/edit/1") Edit

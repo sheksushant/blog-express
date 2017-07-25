@@ -1,0 +1,34 @@
+extends layout
+
+block content
+ .spacer
+ .container
+  .row
+   .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+    h1= title
+    ul.errors
+     if errors
+      each error, i in errors
+       li.alert.alert-danger #{error.msg}
+    form(method='post', action='/articles/add')
+     .form-group
+      label Title:
+      input.form-control(name='title', type='text')
+     .form-group
+      label Subtitle:
+      input.form-control(name='subtitle', type='text')
+     .form-group
+      label Category:
+      select.form-control(name='category')
+       each category, i in categories
+        option(value='#{category._id}') #{category.title}
+     .form-group
+      label Author:
+      input.form-control(name='author', type='text')
+     .form-group
+      label Body
+      textarea.form-control(name='body', id='article_body')
+       if body
+        =body
+     input.btn.btn-primary(name='submit',type='submit',value='Save')
+     a(class='btn btn-default' href='/manage/articles') Back

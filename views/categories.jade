@@ -1,0 +1,14 @@
+extends layout
+
+block content
+.spacer
+.container
+  .row
+    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      h1= title
+      br
+      ul(class='list-group')
+          li(class='list-group-item')
+            a(href='/articles/category/#{category._id}' #{category.title})
+          li(class='list-group-item')
+            a(href='/articles/category/#{category._id}' #{category.title})
