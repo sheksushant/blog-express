@@ -2,36 +2,38 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-  include ./includes/navbar.jade
-  block content
-  hr
-  // Footer
-  footer
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-          ul.list-inline.text-center
-            li
-              a(href='#')
-                span.fa-stack.fa-lg
-                  i.fa.fa-circle.fa-stack-2x
-                  i.fa.fa-twitter.fa-stack-1x.fa-inverse
-            li
-              a(href='#')
-                span.fa-stack.fa-lg
-                  i.fa.fa-circle.fa-stack-2x
-                  i.fa.fa-facebook.fa-stack-1x.fa-inverse
-            li
-              a(href='#')
-                span.fa-stack.fa-lg
-                  i.fa.fa-circle.fa-stack-2x
-                  i.fa.fa-github.fa-stack-1x.fa-inverse
-          p.copyright.text-muted Copyright © Express_Blog 2018 | 
-            a(href='/manage/articles') Manage Articles
+    include ./includes/navbar.jade
+    block content
+    hr
+    // Footer
+    footer
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            ul.list-inline.text-center
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-github.fa-stack-1x.fa-inverse
+            p.copyright.text-muted Copyright © blog_express ||
+             a(href='/manage/articles') Manage Articles ||
+             a(href='https://github.com/sushantshekhar20/blog_express') GitHub
 
 
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/javascripts/jquery.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/main.js')

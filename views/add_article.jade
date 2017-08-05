@@ -18,7 +18,7 @@ block content
       label Subtitle:
       input.form-control(name='subtitle', type='text')
      .form-group
-      label Category:
+      label Category: 
       select.form-control(name='category')
        each category, i in categories
         option(value='#{category._id}') #{category.title}
@@ -30,5 +30,5 @@ block content
       textarea.form-control(name='body', id='article_body')
        if body
         =body
-     input.btn.btn-primary(name='submit',type='submit',value='Save')
+     input.btn.btn-primary(name='submit',type='submit',value='Save') 
      a(class='btn btn-default' href='/manage/articles') Back

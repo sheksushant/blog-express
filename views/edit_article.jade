@@ -14,7 +14,7 @@ block content
       label Subtitle:
       input.form-control(name='subtitle', type='text' value='#{article.subtitle}')
      .form-group
-      label Category:
+      label Category: 
       select.form-control(name='category')
        each category, i in categories
         - var select=null; if (category._id == article.category) select='selected';
@@ -27,6 +27,6 @@ block content
       textarea.form-control(name='body', id='article_body') #{article.body}
        if body
         =body
-     input.btn.btn-primary(name='submit',type='submit',value='Save')
+     input.btn.btn-primary(name='submit',type='submit',value='Save') 
      a(class='btn btn-default' href='/manage/articles') Back
      a(class='btn btn-danger article-delete pull-right', data-article-id=article._id.toString(), data-csrf=locals._csrf) Delete

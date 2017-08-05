@@ -15,6 +15,6 @@ block content
       textarea.form-control(name='description', id='body') #{category.description}
        if description
         =description
-     input.btn.btn-primary(name='submit',type='submit',value='Save')
+     input.btn.btn-primary(name='submit',type='submit',value='Save') 
      a(class='btn btn-default' href='/manage/categories') Back
      a(class='btn btn-danger category-delete pull-right', data-category-id=category._id.toString(), data-csrf=locals._csrf) Delete
