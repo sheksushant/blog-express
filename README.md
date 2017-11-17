@@ -1,4 +1,4 @@
-# blog_express
+# blog-express
 
 #### A Blog using Express and Node.
 
